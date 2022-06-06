@@ -3,8 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  
+    <table class="Calculator">
+        <tr>
+            <td colspan="3"><input class="display-box" type="text"  id="result" disabled /> </td>
+            <td><input class="button" type="button" value="C" onclick="clearAll()"> </td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="1" onclick="display_num('1')"/> </td>
+            <td><input class="button" type="button" value="2" onclick="display_num('2')"/> </td>
+            <td><input class="button" type="button" value="3" onclick="display_num('3')"/> </td>
+            <td><input class="operation" type="button" value="/" onclick="answer(this)"/> </td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="4" onclick="display_num('4')"/> </td>
+            <td><input class="button" type="button" value="5" onclick="display_num('5')"/> </td>
+            <td><input class="button" type="button" value="6" onclick="display_num('6')"/> </td>
+            <td><input class="operation" type="button" value="-" onclick="answer(this)"/> </td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="7" onclick="display_num('7')"/> </td>
+            <td><input class="button" type="button" value="8" onclick="display_num('8')"/> </td>
+            <td><input class="button" type="button" value="9" onclick="display_num('9')"/> </td>
+            <td><input class="operation" type="button" value="+" onclick="answer(this)"/> </td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="." onclick="display_num('.')"/> </td>
+            <td><input class="button" type="button" value="0" onclick="display_num('0')"/> </td>
+            <td><input class="button" type="button" value="=" onclick="equalKey()"/> </td>
+            <td><input class="operation" type="button" value="*" onclick="answer(this)"/> </td>
+        </tr>
+    </table>
 </body>
 </html>
