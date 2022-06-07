@@ -10,7 +10,7 @@
     <table class="Calculator">
         <tr>
             <td colspan="3"><input class="display-box" type="text"  id="result" disabled /> </td>
-            <td><input class="button" type="button" value="C" onclick="clearAll()"> </td>
+            <td><input class="clear" type="button" value="C" onclick="clearAll()"> </td>
         </tr>
         <tr>
             <td><input class="button" type="button" value="1" onclick="display_num('1')"/> </td>
@@ -33,7 +33,7 @@
         <tr>
             <td><input class="button" type="button" value="." onclick="display_num('.')"/> </td>
             <td><input class="button" type="button" value="0" onclick="display_num('0')"/> </td>
-            <td><input class="button" type="button" value="=" onclick="equalKey()"/> </td>
+            <td><input class="equal" type="button" value="=" onclick="equalKey()"/> </td>
             <td><input class="operation" type="button" value="*" onclick="answer(this)"/> </td>
         </tr>
     </table>

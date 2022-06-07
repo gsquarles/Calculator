@@ -60,16 +60,22 @@ function equalKey(){
     if(finalResult != null){
         value2 = document.getElementById("result").value;
         operate(operator, finalResult, value2);
+        finalResult = document.getElementById("result").value;
+        operator = '';
+        
     }
     else{
         value2 = document.getElementById("result").value;
         operate(operator,value1,value2);
+        finalResult = document.getElementById("result").value;
+        operator = ""
+        
     }
     
 }
 
 function answer(btn){
-    if(finalResult != null){
+    if(finalResult != null && operator != ""){
         value2 = document.getElementById("result").value;
         operate(operator, finalResult,value2);
         finalResult = document.getElementById("result").value;
